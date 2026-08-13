@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta name="theme-color" content="#050505">
+<meta name="description" content="Nitanshu Gupta | Founder, Captain Ceramic">
+
+<title>Nitanshu Gupta | Captain Ceramic</title>
+
+<style>
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+
+body{
+  font-family:Arial,Helvetica,sans-serif;
+  background:#050505;
+  color:#f5f5f5;
+  min-height:100vh;
+}
+
+.page{
+  width:100%;
+  max-width:520px;
+  margin:auto;
+  background:#090909;
+  min-height:100vh;
+  overflow:hidden;
+}
+
+/* HEADER */
+
+.header{
+  padding:25px 20px 22px;
+  text-align:center;
+  background:
+    radial-gradient(circle at top,rgba(215,168,79,.12),transparent 45%),
+    #080808;
+  border-bottom:1px solid rgba(215,168,79,.35);
+}
+
+.brand{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:12px;
+}
+
+.brand-logo{
+  width:58px;
+  height:58px;
+  flex-shrink:0;
+  object-fit:contain;
+}
+
+.brand-text{
+  text-align:left;
+  line-height:.9;
+}
+
+.brand-main{
+  font-size:30px;
+  font-weight:800;
+  letter-spacing:1.5px;
+  color:#d7a84f;
+}
+
+.brand-sub{
+  font-size:27px;
+  font-weight:800;
+  letter-spacing:1px;
+  color:#f1f1f1;
+  margin-top:6px;
+}
+
+.choice{
+  margin-top:13px;
+  color:#d7a84f;
+  font-size:11px;
+  font-weight:bold;
+  letter-spacing:3px;
+}
+
+.gold-line{
+  height:1px;
+  background:linear-gradient(
+    to right,
+    transparent,
+    #d7a84f,
+    transparent
+  );
+  margin:16px 0 0;
+}
+
+/* PROFILE */
+
+.profile{
+  text-align:center;
+  padding:25px 20px 20px;
+}
+
+.profile-photo{
+  width:105px;
+  height:105px;
+  border-radius:50%;
+  margin:0 auto 15px;
+  border:2px solid #d7a84f;
+  overflow:hidden;
+  background:#111;
+}
+
+.profile-photo img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+}
+
+.name{
+  font-size:28px;
+  font-weight:700;
+  color:#fff;
+}
+
+.designation{
+  margin-top:7px;
+  font-size:15px;
+  color:#d7a84f;
+  font-weight:600;
+}
+
+.business-line{
+  margin-top:8px;
+  font-size:14px;
+  color:#dedede;
+}
+
+/* ACTION BUTTONS */
+
+.actions{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:10px;
+  padding:10px 20px 25px;
+}
+
+.action{
+  text-decoration:none;
+  color:#d7a84f;
+  border:1px solid rgba(215,168,79,.65);
+  border-radius:12px;
+  padding:12px 5px;
+  text-align:center;
+  background:#111;
+  font-size:12px;
+  font-weight:bold;
+  transition:.2s;
+}
+
+.action:hover{
+  background:#1c1c1c;
+  transform:translateY(-1px);
+}
+
+.action-icon{
+  display:block;
+  font-size:20px;
+  margin-bottom:5px;
+}
+
+/* CARDS */
+
+.card{
+  margin:0 16px 15px;
+  padding:20px;
+  background:#111;
+  border:1px solid rgba(215,168,79,.28);
+  border-radius:16px;
+}
+
+.card-title{
+  color:#d7a84f;
+  font-size:18px;
+  font-weight:700;
+  margin-bottom:17px;
+  letter-spacing:.4px;
+}
+
+.detail{
+  padding:12px 0;
+  border-bottom:1px solid rgba(255,255,255,.08);
+}
+
+.detail:last-child{
+  border-bottom:none;
+  padding-bottom:0;
+}
+
+.label{
+  color:#8e8e8e;
+  font-size:12px;
+  margin-bottom:5px;
+}
+
+.value{
+  color:#f2f2f2;
+  font-size:15px;
+  line-height:1.5;
+  word-break:break-word;
+}
+
+.value a{
+  color:#d7a84f;
+  text-decoration:none;
+}
+
+/* SAVE CONTACT */
+
+.save-contact{
+  display:block;
+  margin-top:18px;
+  width:100%;
+  text-align:center;
+  padding:15px;
+  border-radius:11px;
+  background:#d7a84f;
+  color:#090909;
+  text-decoration:none;
+  font-weight:800;
+  font-size:15px;
+  letter-spacing:.4px;
+}
+
+/* BUTTON */
+
+.button{
+  display:block;
+  text-align:center;
+  text-decoration:none;
+  margin-top:12px;
+  padding:13px;
+  border:1px solid #d7a84f;
+  border-radius:10px;
+  color:#d7a84f;
+  font-weight:700;
+  font-size:14px;
+}
+
+/* QR */
+
+.qr-card{
+  text-align:center;
+  padding:25px 20px 27px;
+}
+
+.qr-title{
+  color:#d7a84f;
+  font-size:18px;
+  font-weight:700;
+  margin-bottom:7px;
+}
+
+.qr-subtitle{
+  color:#999;
+  font-size:13px;
+  margin-bottom:18px;
+}
+
+.qr-box{
+  display:inline-block;
+  background:#fff;
+  padding:12px;
+  border-radius:12px;
+}
+
+.qr-box img{
+  display:block;
+  width:210px;
+  height:210px;
+}
+
+.qr-link{
+  display:block;
+  margin-top:15px;
+  color:#d7a84f;
+  font-size:12px;
+  line-height:1.5;
+  word-break:break-all;
+  text-decoration:none;
+}
+
+/* FOOTER */
+
+.footer{
+  text-align:center;
+  padding:25px 20px 30px;
+  color:#777;
+  font-size:11px;
+}
+
+.footer strong{
+  color:#d7a84f;
+}
+
+@media(max-width:380px){
+
+  .brand-main{
+    font-size:26px;
+  }
+
+  .brand-sub{
+    font-size:23px;
+  }
+
+  .name{
+    font-size:25px;
+  }
+
+  .actions{
+    gap:6px;
+    padding-left:12px;
+    padding-right:12px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<div class="page">
+
+<!-- BRAND -->
+
+<header class="header">
+
+  <div class="brand">
+
+    <!-- Captain Ceramic C logo -->
+    <img
+      class="brand-logo"
+      src="logo.png"
+      alt="Captain Ceramic Logo"
+    >
+
+    <div class="brand-text">
+      <div class="brand-main">CAPTAIN</div>
+      <div class="brand-sub">CERAMIC</div>
+    </div>
+
+  </div>
+
+  <div class="choice">CAPTAIN'S CHOICE</div>
+
+  <div class="gold-line"></div>
+
+</header>
+
+
+<!-- PROFILE -->
+
+<section class="profile">
+
+  <!-- Nitanshu photo -->
+  <div class="profile-photo">
+    <img
+      src="nitanshu.jpg"
+      alt="Nitanshu Gupta"
+    >
+  </div>
+
+  <div class="name">
+    Nitanshu Gupta
+  </div>
+
+  <div class="designation">
+    Founder
+  </div>
+
+  <div class="business-line">
+    Tiles • Sinks • Sanitaryware
+  </div>
+
+</section>
+
+
+<!-- QUICK ACTIONS -->
+
+<div class="actions">
+
+  <a class="action" href="tel:+919213591800">
+    <span class="action-icon">☎</span>
+    Call
+  </a>
+
+  <a class="action" href="tel:+917383791800">
+    <span class="action-icon">☎</span>
+    Call
+  </a>
+
+  <a class="action" href="mailto:ceramiccaptain@gmail.com">
+    <span class="action-icon">✉</span>
+    Email
+  </a>
+
+  <a
+    class="action"
+    href="https://maps.app.goo.gl/sJVDopkQrrPcUtw39"
+    target="_blank"
+  >
+    <span class="action-icon">⌖</span>
+    Location
+  </a>
+
+</div>
+
+
+<!-- CONTACT -->
+
+<section class="card">
+
+  <div class="card-title">
+    Contact
+  </div>
+
+  <div class="detail">
+    <div class="label">Name</div>
+    <div class="value">Nitanshu Gupta</div>
+  </div>
+
+  <div class="detail">
+    <div class="label">Designation</div>
+    <div class="value">Founder</div>
+  </div>
+
+  <div class="detail">
+    <div class="label">Business</div>
+    <div class="value">Tiles • Sinks • Sanitaryware</div>
+  </div>
+
+  <div class="detail">
+    <div class="label">Mobile</div>
+    <div class="value">
+      <a href="tel:+919213591800">
+        +91 92135 91800
+      </a>
+    </div>
+  </div>
+
+  <div class="detail">
+    <div class="label">Additional Contact</div>
+    <div class="value">
+      <a href="tel:+917383791800">
+        +91 73837 91800
+      </a>
+    </div>
+  </div>
+
+  <div class="detail">
+    <div class="label">Email</div>
+    <div class="value">
+      <a href="mailto:ceramiccaptain@gmail.com">
+        ceramiccaptain@gmail.com
+      </a>
+    </div>
+  </div>
+
+  <div class="detail">
+    <div class="label">GST No.</div>
+    <div class="value">
+      08DBVPG4729M1ZU
+    </div>
+  </div>
+
+  <div class="detail">
+    <div class="label">Address</div>
+    <div class="value">
+      Office No. 16, Radhe Shyam Plaza,<br>
+      Bharat Nagar, Morbi,<br>
+      Gujarat 363642, India
+    </div>
+  </div>
+
+  <a
+    class="save-contact"
+    href="javascript:void(0)"
+    onclick="saveContact()"
+  >
+    ＋ SAVE TO CONTACT
+  </a>
+
+</section>
+
+
+<!-- LOCATION -->
+
+<section class="card">
+
+  <div class="card-title">
+    Location
+  </div>
+
+  <div class="detail">
+
+    <div class="label">
+      Office Address
+    </div>
+
+    <div class="value">
+      Office No. 16, Radhe Shyam Plaza,<br>
+      Bharat Nagar, Morbi,<br>
+      Gujarat 363642
+    </div>
+
+  </div>
+
+  <a
+    class="button"
+    href="https://maps.app.goo.gl/sJVDopkQrrPcUtw39"
+    target="_blank"
+  >
+    📍 SHOW ON GOOGLE MAPS
+  </a>
+
+</section>
+
+
+<!-- WEBSITE -->
+
+<section class="card">
+
+  <div class="card-title">
+    Web Links
+  </div>
+
+  <div class="detail">
+
+    <div class="label">
+      Official Company Website
+    </div>
+
+    <div class="value">
+
+      <a
+        href="https://captainceramic.vercel.app/"
+        target="_blank"
+      >
+        captainceramic.vercel.app
+      </a>
+
+    </div>
+
+  </div>
+
+  <a
+    class="button"
+    href="https://captainceramic.vercel.app/"
+    target="_blank"
+  >
+    🌐 VISIT CAPTAIN CERAMIC
+  </a>
+
+</section>
+
+
+<!-- QR -->
+
+<section class="card qr-card">
+
+  <div class="qr-title">
+    Scan & Visit Captain Ceramic
+  </div>
+
+  <div class="qr-subtitle">
+    Scan this QR code to visit the official Captain Ceramic website
+  </div>
+
+  <div class="qr-box">
+
+    <img
+      src="https://api.qrserver.com/v1/create-qr-code/?size=500x500&margin=12&data=https%3A%2F%2Fcaptainceramic.vercel.app%2F"
+      alt="Captain Ceramic Website QR Code"
+    >
+
+  </div>
+
+  <a
+    class="qr-link"
+    href="https://captainceramic.vercel.app/"
+    target="_blank"
+  >
+    https://captainceramic.vercel.app/
+  </a>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer class="footer">
+
+  <strong>CAPTAIN CERAMIC</strong><br>
+  Captain's Choice
+
+</footer>
+
+</div>
+
+
+<script>
+
+function saveContact(){
+
+  const vcard =
+`BEGIN:VCARD
+VERSION:3.0
+FN:Nitanshu Gupta
+N:Nitanshu;Gupta;;;
+ORG:Captain Ceramic
+TITLE:Founder
+TEL;TYPE=CELL,VOICE:+919213591800
+TEL;TYPE=CELL,VOICE:+917383791800
+EMAIL;TYPE=INTERNET:ceramiccaptain@gmail.com
+ADR;TYPE=WORK:;;Office No. 16, Radhe Shyam Plaza, Bharat Nagar;Morbi;Gujarat;363642;India
+URL:https://captainceramic.vercel.app/
+NOTE:Tiles, Sinks & Sanitaryware | GST No. 08DBVPG4729M1ZU
+X-GST-NO:08DBVPG4729M1ZU
+END:VCARD`;
+
+  const blob = new Blob(
+    [vcard],
+    {type:"text/vcard;charset=utf-8"}
+  );
+
+  const url = URL.createObjectURL(blob);
+
+  const link = document.createElement("a");
+
+  link.href = url;
+  link.download = "Nitanshu_Gupta_Captain_Ceramic.vcf";
+
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+
+  URL.revokeObjectURL(url);
+}
+
+</script>
+
+</body>
+</html>
