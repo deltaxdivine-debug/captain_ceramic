@@ -4,7 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#050505">
-  <meta name="description" content="Captain Ceramic - Captain's Choice | Tiles, Sinks & Sanitaryware">
+  <meta
+    name="description"
+    content="Captain Ceramic - Captain's Choice | Tiles, Sinks & Sanitaryware"
+  >
 
   <title>Nitanshu Gupta | Captain Ceramic</title>
 
@@ -53,28 +56,38 @@
       margin-bottom: 7px;
     }
 
-    /* CAPTAIN C SYMBOL */
     .brand-symbol {
       width: 52px;
       height: 52px;
-      border: 4px solid #d7a84f;
-      border-right-color: transparent;
+      border: 3px solid #d7a84f;
       border-radius: 50%;
       position: relative;
       flex-shrink: 0;
-      transform: rotate(-35deg);
     }
 
     .brand-symbol::before {
       content: "";
       position: absolute;
-      width: 22px;
-      height: 22px;
+      width: 29px;
+      height: 29px;
       border: 3px solid #d7a84f;
-      border-right-color: transparent;
       border-radius: 50%;
-      top: 11px;
-      left: 11px;
+      top: 8px;
+      left: 8px;
+      background: #080808;
+    }
+
+    .brand-symbol::after {
+      content: "C";
+      position: absolute;
+      color: #d7a84f;
+      font-size: 20px;
+      font-weight: 800;
+      line-height: 1;
+      top: 12px;
+      left: 15px;
+      background: #080808;
+      padding: 0 1px;
     }
 
     .brand-text {
@@ -288,7 +301,6 @@
       color: #999;
       font-size: 13px;
       margin-bottom: 18px;
-      line-height: 1.5;
     }
 
     .qr-box {
@@ -312,10 +324,6 @@
       line-height: 1.5;
       word-break: break-all;
       text-decoration: none;
-    }
-
-    .qr-link:hover {
-      text-decoration: underline;
     }
 
     /* FOOTER */
@@ -354,267 +362,274 @@
 
 <body>
 
-<div class="page">
+  <div class="page">
 
-  <!-- BRAND -->
-  <header class="header">
+    <!-- BRAND -->
+    <header class="header">
 
-    <div class="brand">
+      <div class="brand">
 
-      <div class="brand-symbol"></div>
+        <div class="brand-symbol"></div>
 
-      <div class="brand-text">
-        <div class="brand-main">CAPTAIN</div>
-        <div class="brand-sub">CERAMIC</div>
+        <div class="brand-text">
+          <div class="brand-main">CAPTAIN</div>
+          <div class="brand-sub">CERAMIC</div>
+        </div>
+
       </div>
 
+      <div class="choice">CAPTAIN'S CHOICE</div>
+
+      <div class="gold-line"></div>
+
+    </header>
+
+
+    <!-- PROFILE -->
+    <section class="profile">
+
+      <div class="profile-photo">
+        NG
+      </div>
+
+      <div class="name">
+        Nitanshu Gupta
+      </div>
+
+      <div class="designation">
+        Founder
+      </div>
+
+      <div class="business-line">
+        Tiles • Sinks • Sanitaryware
+      </div>
+
+    </section>
+
+
+    <!-- QUICK ACTIONS -->
+    <div class="actions">
+
+      <a class="action" href="tel:+919213591800">
+        <span class="action-icon">☎</span>
+        Call
+      </a>
+
+      <a class="action" href="tel:+917383791800">
+        <span class="action-icon">☎</span>
+        Call
+      </a>
+
+      <a class="action" href="mailto:ceramiccaptain@gmail.com">
+        <span class="action-icon">✉</span>
+        Email
+      </a>
+
+      <a
+        class="action"
+        href="https://maps.app.goo.gl/sJVDopkQrrPcUtw39"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <span class="action-icon">⌖</span>
+        Location
+      </a>
+
     </div>
 
-    <div class="choice">CAPTAIN'S CHOICE</div>
 
-    <div class="gold-line"></div>
+    <!-- CONTACT -->
+    <section class="card">
 
-  </header>
+      <div class="card-title">
+        Contact
+      </div>
+
+      <div class="detail">
+        <div class="label">Name</div>
+        <div class="value">Nitanshu Gupta</div>
+      </div>
+
+      <div class="detail">
+        <div class="label">Designation</div>
+        <div class="value">Founder</div>
+      </div>
+
+      <div class="detail">
+        <div class="label">Business</div>
+        <div class="value">Tiles • Sinks • Sanitaryware</div>
+      </div>
+
+      <div class="detail">
+        <div class="label">Mobile</div>
+        <div class="value">
+          <a href="tel:+919213591800">
+            +91 92135 91800
+          </a>
+        </div>
+      </div>
+
+      <div class="detail">
+        <div class="label">Additional Contact</div>
+        <div class="value">
+          <a href="tel:+917383791800">
+            +91 73837 91800
+          </a>
+        </div>
+      </div>
+
+      <div class="detail">
+        <div class="label">Email</div>
+        <div class="value">
+          <a href="mailto:ceramiccaptain@gmail.com">
+            ceramiccaptain@gmail.com
+          </a>
+        </div>
+      </div>
+
+      <div class="detail">
+        <div class="label">GST No.</div>
+        <div class="value">
+          08DBVPG4729M1ZU
+        </div>
+      </div>
+
+      <div class="detail">
+        <div class="label">Address</div>
+        <div class="value">
+          Office No. 16, Radhe Shyam Plaza,<br>
+          Bharat Nagar, Morbi,<br>
+          Gujarat 363642, India
+        </div>
+      </div>
+
+      <a
+        class="save-contact"
+        href="javascript:void(0)"
+        onclick="saveContact()"
+      >
+        ＋ SAVE TO CONTACT
+      </a>
+
+    </section>
 
 
-  <!-- PROFILE -->
-  <section class="profile">
+    <!-- LOCATION -->
+    <section class="card">
 
-    <div class="profile-photo">
-      NG
-    </div>
+      <div class="card-title">
+        Location
+      </div>
 
-    <div class="name">
-      Nitanshu Gupta
-    </div>
+      <div class="detail">
+        <div class="label">Office Address</div>
 
-    <div class="designation">
-      Founder
-    </div>
+        <div class="value">
+          Office No. 16, Radhe Shyam Plaza,<br>
+          Bharat Nagar, Morbi, Gujarat 363642
+        </div>
+      </div>
 
-    <div class="business-line">
-      Tiles • Sinks • Sanitaryware
-    </div>
+      <a
+        class="button"
+        href="https://maps.app.goo.gl/sJVDopkQrrPcUtw39"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        📍 SHOW ON GOOGLE MAPS
+      </a>
 
-  </section>
+    </section>
 
 
-  <!-- QUICK ACTIONS -->
-  <div class="actions">
+    <!-- WEBSITE -->
+    <section class="card">
 
-    <a class="action" href="tel:+919213591800">
-      <span class="action-icon">☎</span>
-      Call
-    </a>
+      <div class="card-title">
+        Web Links
+      </div>
 
-    <a class="action" href="tel:+917383791800">
-      <span class="action-icon">☎</span>
-      Call
-    </a>
+      <div class="detail">
 
-    <a class="action" href="mailto:ceramiccaptain@gmail.com">
-      <span class="action-icon">✉</span>
-      Email
-    </a>
+        <div class="label">
+          Official Company Website
+        </div>
 
-    <a
-      class="action"
-      href="https://maps.app.goo.gl/sJVDopkQrrPcUtw39"
-      target="_blank"
-      rel="noopener noreferrer">
-      <span class="action-icon">⌖</span>
-      Location
-    </a>
+        <div class="value">
+
+          <a
+            href="https://captainceramicwebsitefinallogo-evdrvbvwa.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            captainceramicwebsitefinallogo-evdrvbvwa.vercel.app
+          </a>
+
+        </div>
+
+      </div>
+
+      <a
+        class="button"
+        href="https://captainceramicwebsitefinallogo-evdrvbvwa.vercel.app/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        🌐 VISIT CAPTAIN CERAMIC
+      </a>
+
+    </section>
+
+
+    <!-- QR CODE -->
+    <section class="card qr-card">
+
+      <div class="qr-title">
+        Scan & Connect
+      </div>
+
+      <div class="qr-subtitle">
+        Scan this QR code to open the Captain Ceramic company website
+      </div>
+
+      <div class="qr-box">
+
+        <img
+          src="https://api.qrserver.com/v1/create-qr-code/?size=500x500&margin=12&data=https%3A%2F%2Fcaptainceramicwebsitefinallogo-evdrvbvwa.vercel.app%2F"
+          alt="Captain Ceramic Company Website QR Code"
+        >
+
+      </div>
+
+      <a
+        class="qr-link"
+        href="https://captainceramicwebsitefinallogo-evdrvbvwa.vercel.app/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        https://captainceramicwebsitefinallogo-evdrvbvwa.vercel.app/
+      </a>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+      <strong>CAPTAIN CERAMIC</strong>
+      <br>
+      Captain's Choice
+
+    </footer>
 
   </div>
 
 
-  <!-- CONTACT -->
-  <section class="card">
+  <script>
 
-    <div class="card-title">
-      Contact
-    </div>
+    function saveContact() {
 
-    <div class="detail">
-      <div class="label">Name</div>
-      <div class="value">Nitanshu Gupta</div>
-    </div>
-
-    <div class="detail">
-      <div class="label">Designation</div>
-      <div class="value">Founder</div>
-    </div>
-
-    <div class="detail">
-      <div class="label">Business</div>
-      <div class="value">Tiles • Sinks • Sanitaryware</div>
-    </div>
-
-    <div class="detail">
-      <div class="label">Mobile</div>
-      <div class="value">
-        <a href="tel:+919213591800">+91 92135 91800</a>
-      </div>
-    </div>
-
-    <div class="detail">
-      <div class="label">Additional Contact</div>
-      <div class="value">
-        <a href="tel:+917383791800">+91 73837 91800</a>
-      </div>
-    </div>
-
-    <div class="detail">
-      <div class="label">Email</div>
-      <div class="value">
-        <a href="mailto:ceramiccaptain@gmail.com">
-          ceramiccaptain@gmail.com
-        </a>
-      </div>
-    </div>
-
-    <div class="detail">
-      <div class="label">GST No.</div>
-      <div class="value">08DBVPG4729M1ZU</div>
-    </div>
-
-    <div class="detail">
-      <div class="label">Address</div>
-      <div class="value">
-        Office No. 16, Radhe Shyam Plaza,<br>
-        Bharat Nagar, Morbi,<br>
-        Gujarat 363642, India
-      </div>
-    </div>
-
-    <a
-      class="save-contact"
-      href="javascript:void(0)"
-      onclick="saveContact()">
-      ＋ SAVE TO CONTACT
-    </a>
-
-  </section>
-
-
-  <!-- LOCATION -->
-  <section class="card">
-
-    <div class="card-title">
-      Location
-    </div>
-
-    <div class="detail">
-
-      <div class="label">
-        Office Address
-      </div>
-
-      <div class="value">
-        Office No. 16, Radhe Shyam Plaza,<br>
-        Bharat Nagar, Morbi, Gujarat 363642
-      </div>
-
-    </div>
-
-    <a
-      class="button"
-      href="https://maps.app.goo.gl/sJVDopkQrrPcUtw39"
-      target="_blank"
-      rel="noopener noreferrer">
-      📍 SHOW ON GOOGLE MAPS
-    </a>
-
-  </section>
-
-
-  <!-- COMPANY WEBSITE -->
-  <section class="card">
-
-    <div class="card-title">
-      Company Website
-    </div>
-
-    <div class="detail">
-
-      <div class="label">
-        Official Captain Ceramic Website
-      </div>
-
-      <div class="value">
-
-        <a
-          href="https://captainceramic.vercel.app/"
-          target="_blank"
-          rel="noopener noreferrer">
-          captainceramic.vercel.app
-        </a>
-
-      </div>
-
-    </div>
-
-    <a
-      class="button"
-      href="https://captainceramic.vercel.app/"
-      target="_blank"
-      rel="noopener noreferrer">
-      🌐 VISIT CAPTAIN CERAMIC
-    </a>
-
-  </section>
-
-
-  <!-- QR CODE -->
-  <section class="card qr-card">
-
-    <div class="qr-title">
-      Visit Captain Ceramic
-    </div>
-
-    <div class="qr-subtitle">
-      Scan this QR code to open the official Captain Ceramic company website
-    </div>
-
-    <div class="qr-box">
-
-      <img
-        src="https://api.qrserver.com/v1/create-qr-code/?size=500x500&margin=12&data=https%3A%2F%2Fcaptainceramic.vercel.app%2F"
-        alt="Captain Ceramic Company Website QR Code"
-      >
-
-    </div>
-
-    <a
-      class="qr-link"
-      href="https://captainceramic.vercel.app/"
-      target="_blank"
-      rel="noopener noreferrer">
-      https://captainceramic.vercel.app/
-    </a>
-
-  </section>
-
-
-  <!-- FOOTER -->
-  <footer class="footer">
-
-    <strong>CAPTAIN CERAMIC</strong>
-    <br>
-
-    Captain's Choice
-
-  </footer>
-
-</div>
-
-
-<script>
-
-function saveContact() {
-
-  const vcard =
+      const vcard =
 `BEGIN:VCARD
 VERSION:3.0
 FN:Nitanshu Gupta
@@ -625,36 +640,36 @@ TEL;TYPE=CELL,VOICE:+919213591800
 TEL;TYPE=CELL,VOICE:+917383791800
 EMAIL;TYPE=INTERNET:ceramiccaptain@gmail.com
 ADR;TYPE=WORK:;;Office No. 16, Radhe Shyam Plaza, Bharat Nagar;Morbi;Gujarat;363642;India
-URL:https://captainceramic.vercel.app/
+URL:https://captainceramicwebsitefinallogo-evdrvbvwa.vercel.app/
 NOTE:Tiles, Sinks & Sanitaryware | GST No. 08DBVPG4729M1ZU
 X-GST-NO:08DBVPG4729M1ZU
 END:VCARD`;
 
-  const blob = new Blob(
-    [vcard],
-    {
-      type: "text/vcard;charset=utf-8"
+      const blob = new Blob(
+        [vcard],
+        {
+          type: "text/vcard;charset=utf-8"
+        }
+      );
+
+      const url = URL.createObjectURL(blob);
+
+      const link = document.createElement("a");
+
+      link.href = url;
+      link.download = "Nitanshu_Gupta_Captain_Ceramic.vcf";
+
+      document.body.appendChild(link);
+
+      link.click();
+
+      document.body.removeChild(link);
+
+      URL.revokeObjectURL(url);
+
     }
-  );
 
-  const url = URL.createObjectURL(blob);
-
-  const link = document.createElement("a");
-
-  link.href = url;
-
-  link.download = "Nitanshu_Gupta_Captain_Ceramic.vcf";
-
-  document.body.appendChild(link);
-
-  link.click();
-
-  document.body.removeChild(link);
-
-  URL.revokeObjectURL(url);
-}
-
-</script>
+  </script>
 
 </body>
 </html>
